@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About -- 111208094</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 70%;
+      margin: 20px auto;
+    }
+    td, th {
+      border: 1px solid #333;
+      padding: 6px;
+      vertical-align: middle;
+    }
+    td img {
+      width: 150px;
+      border: 1px solid #ccc;
+    }
+    textarea {
+      width: 98%;
+      height: 60px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select {
+      width: 60%;
+    }
+    .center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <table>
+      <tr>
+        <td colspan="3" class="center"><strong>About -- 111208094</strong></td>
+      </tr>
+      <tr>
+        <td rowspan="4" class="center">
+          <img src="圓圓.jpg" alt="personal photo"><br>
+          personal photo
+        </td>
+        <td colspan="2">
+          Name: <input type="text" name="name"><br><br>
+          Gender:
+          <input type="radio" name="gender" value="Male">Male
+          <input type="radio" name="gender" value="Female">Female
+          <input type="radio" name="gender" value="Other">Other
+        </td>
+      </tr>
+      <tr>
+        <td>
+          County:
+          <select name="county">
+            <option value="Taipei">Taipei</option>
+            <option value="Tainan">Tainan</option>
+            <option value="Taichung">Taichung</option>
+            <option value="Taoyuan">Taoyuan</option>
+          </select>
+        </td>
+        <td>
+          Birthday: <input type="date" name="birthday">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          E-mail: <input type="email" name="email">
+        </td>
+      </tr>
+      <tr>
+        <td>Hobby</td>
+        <td>
+          <input type="checkbox" name="hobby" value="Swimming">Swimming
+          <input type="checkbox" name="hobby" value="Volleyball">Volleyball
+          <input type="checkbox" name="hobby" value="Movie">Movie
+          <input type="checkbox" name="hobby" value="Game">Game
+          <input type="checkbox" name="hobby" value="Sleep">sleep
+        </td>
+      </tr>
+      <tr>
+        <td>Skill</td>
+        <td colspan="2">
+          <input type="checkbox" name="skill" value="Java">Java
+          <input type="checkbox" name="skill" value="HTML">HTML
+          <input type="checkbox" name="skill" value="Python">Python
+          <input type="checkbox" name="skill" value="Microsoft Office">Microsoft Office
+          <input type="checkbox" name="skill" value="Premiere">Premiere
+        </td>
+      </tr>
+      <tr>
+        <td>Say Something</td>
+        <td colspan="2">
+          <textarea placeholder="Say something here."></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" class="center">
+          <input type="submit" value="提交">
+          <input type="reset" value="重設">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
+
