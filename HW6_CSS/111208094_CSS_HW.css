@@ -1,0 +1,190 @@
+body {
+  background-color: #e8f3ec; /* 淡綠背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: "Microsoft JhengHei", sans-serif;
+}
+
+/* ===== 主容器 ===== */
+.main-container {
+  max-width: 1100px;
+  width: 90%;
+  background-color: white;
+  display: flex;
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px rgba(60, 90, 70, 0.15);
+  overflow: hidden;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================== 左面板 ==================== */
+.left-panel {
+  width: 30%;
+  background-color: #f3f9f5; /* 奶綠色 */
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-panel img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text-content {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nccu-icon {
+  width: 100px;
+  margin-top: 20px;
+}
+
+/* ==================== 右面板 ==================== */
+.right-panel {
+  width: 70%;
+  padding: 30px;
+}
+
+.section {
+  margin-bottom: 45px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #87b6a0;
+  padding-bottom: 5px;
+  color: #4f8263;
+  transition: 0.2s;
+}
+
+.section-title:hover {
+  color: #3b6b52;
+}
+
+/* ==================== Timeline (Education) ==================== */
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  color: #445c4e;
+  padding: 5px 8px;
+  border-radius: 6px;
+  transition: background-color 0.25s ease;
+}
+
+.timeline-item:hover {
+  background-color: #f1f8f4;
+}
+
+.year {
+  font-weight: bold;
+  color: #4d7f64;
+}
+
+/* ==================== 技能 tag ==================== */
+.tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 12px;
+  background-color: #e0f1e6;
+  margin-right: 8px;
+  margin-bottom: 6px;
+  color: #365d47;
+  transition: transform 0.2s ease;
+}
+
+.tag:hover {
+  transform: scale(1.07);
+}
+
+/* ==================== Homework & Lab ==================== */
+.hw-lab-container {
+  display: flex;
+  gap: 20px;
+}
+
+.hw-column, .lab-column {
+  width: 50%;
+  background-color: #edf7f1;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.hw-column ul, .lab-column ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hw-column a, .lab-column a {
+  text-decoration: none;
+  color: #3c6e55;
+}
+
+.hw-column a:hover, .lab-column a:hover {
+  color: #2b5f44;
+}
+
+/* ==================== Favorite Music ==================== */
+.music-row {
+  display: flex;
+  gap: 20px;
+}
+
+.music-item {
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #f4faf6;
+  transition: 0.25s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #355a47;
+}
+
+.music-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(100, 130, 110, 0.25);
+}
+
+.music-item img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #d1e8db;
+}
+
+.music-item p {
+  text-align: center;
+  margin-top: 8px;
+  color: #355a47;
+}
+
+.music-note {
+  margin-top: 12px;
+  color: #4f755f;
+}
+
