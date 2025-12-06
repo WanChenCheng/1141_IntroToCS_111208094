@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>111208094_HW7_1A2B</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-wrapper">
+  <div class="game-card">
+
+    <!-- 左側 -->
+    <div>
+      <div class="title">1A2B 猜數字遊戲</div>
+      <div class="subtitle">輸入 4 位不重複數字，猜中為止</div>
+
+      <div class="hint">
+        A：數字與位置皆正確｜B：數字正確但位置錯誤
+      </div>
+
+      <div id="status" class="status-badge">遊戲進行中</div>
+
+      <div class="input-group">
+        <input id="guessInput" type="text" maxlength="4" placeholder="輸入 4 位不重複數字">
+        <button id="submitBtn" class="btn-primary">送出</button>
+      </div>
+
+      <div class="message" id="msg"></div>
+
+      <button class="btn-secondary" id="restartBtn">重新開始</button>
+    </div>
+
+    <!-- 右側 -->
+    <div class="record-panel">
+      <div class="record-title">猜測紀錄</div>
+      <div class="count">目前猜測次數：<span id="count">0</span></div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>次數</th>
+            <th>猜測</th>
+            <th>結果</th>
+          </tr>
+        </thead>
+        <tbody id="record">
+          <tr>
+            <td colspan="3">尚未有任何猜測</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="answer" id="answer">答案：????</div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
