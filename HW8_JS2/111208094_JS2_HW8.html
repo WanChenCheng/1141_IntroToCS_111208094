@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>JS Calculator</h1>
+
+    <label for="num1">Number 1</label>
+    <input type="number" id="num1" placeholder="e.g. 30" />
+
+    <label for="num2">Number 2</label>
+    <input type="number" id="num2" placeholder="e.g. 60" />
+
+    <label for="op">Operate way?</label>
+    <select id="op">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+
+    <button id="calcBtn">Calculate</button>
+
+    <div class="result">
+      Result = <span id="resultText">--</span>
+    </div>
+
+    <p class="hint" id="hintText"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
